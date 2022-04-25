@@ -10,7 +10,7 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
   },
-  "name": "kelvin-portfolio",
+  "name": "awesome-books-e6",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "version": "1.0.0",
   "main": "index.js",
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kelvinbush/kelvin-portfolio.git"
+    "url": "git+https://github.com/kelvinbush/Awesome-Books-E6.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kelvinbush/kelvin-portfolio/issues"
+    "url": "https://github.com/kelvinbush/Awesome-Books-E6/issues"
   },
-  "homepage": "https://github.com/kelvinbush/kelvin-portfolio#readme"
+  "homepage": "https://github.com/kelvinbush/Awesome-Books-E6#readme"
 }
