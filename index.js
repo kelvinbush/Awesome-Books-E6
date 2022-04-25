@@ -12,7 +12,7 @@ if (awesomeBooks.getBooks().length < 1) {
 
 const bookListSection = document.querySelector('#book-list');
 
-function renderBookList() {
+const renderBookList = () => {
   bookListSection.innerHTML = awesomeBooks.getBooks()
     .map((book, index) => `
         <article class="book ${index % 2 === 0 ? 'dark' : ''}">
@@ -22,17 +22,17 @@ function renderBookList() {
             <button data-id=${book.id} class="remove">Remove</button>
         </article>`)
     .join('');
-}
+};
 
 renderBookList();
 
 const addBookForm = document.querySelector('#add-book');
-addBookForm.addEventListener('submit', function (event) {
+addBookForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const title = event.target.querySelector('#title').value;
   const author = event.target.querySelector('#author').value;
   awesomeBooks.addBook(title, author);
-  this.reset();
+  event.target.reset();
   renderBookList();
 });
 
@@ -46,7 +46,8 @@ bookListSection.addEventListener('click', (event) => {
 
 const dateSection = document.querySelector('#date');
 
-dateSection.innerHTML = DateTime.now().toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
+dateSection.innerHTML = DateTime.now()
+  .toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
 
 const listLink = document.querySelector('#list');
 const newLink = document.querySelector('#new');
