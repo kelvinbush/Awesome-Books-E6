@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](http://kelvinbush.me/Awesome-Books/)
+[Live Demo Link](http://kelvinbush.me/Awesome-Books-E6/)
 
 
 ## Getting Started
