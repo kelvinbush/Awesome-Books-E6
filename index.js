@@ -46,8 +46,7 @@ bookListSection.addEventListener('click', (event) => {
 
 const dateSection = document.querySelector('#date');
 
-// eslint-disable-next-line new-cap
-dateSection.innerHTML = new DateTime.now().toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
+dateSection.innerHTML = DateTime.now().toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
 
 const listLink = document.querySelector('#list');
 const newLink = document.querySelector('#new');
